@@ -18,16 +18,40 @@ function FilterCtrl($scope) {
   $scope.filter_prefix = "-webkit-filter:";
   $scope.filters = [
     {
-      "name":"blur",
-      "value":1,
-      "pre":"blur(",
-      "post":"px)"
+      "name":"grayscale",
+      "value":0,
+      "pre":"grayscale(",
+      "post":"%)"
+    },
+    {
+      "name":"sepia",
+      "value":0,
+      "pre":"sepia(",
+      "post":"%)"
+    },
+    {
+      "name":"saturate",
+      "value":50,
+      "pre":"saturate(",
+      "post":"%)"
+    },
+    {
+      "name":"invert",
+      "value":0,
+      "pre":"invert(",
+      "post":"%)"
     },
     {
       "name":"brightness",
-      "value":60,
+      "value":100,
       "pre":"brightness(",
       "post":"%)"
+    },
+    {
+      "name":"blur",
+      "value":0,
+      "pre":"blur(",
+      "post":"px)"
     },
     {
       "name":"contrast",
