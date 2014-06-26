@@ -18,19 +18,33 @@
 	    	<p>Use sliders on the right, to style the image, css rules are generated below. For use in <em>modern</em> browsers.</p>
     	</div>
     	<div class="row">
-		    <div class="col-xs-12 col-sm-6">
+		    <div class="col-xs-12 col-sm-6" id="image_view">
 		    	<!-- image -->
-		    	image
+		    	<img src="http://farm4.staticflickr.com/3915/14503838952_748f7f441d_c.jpg" style="{{css()}}" />
 		    </div>  
 		    <div class="col-xs-12 col-sm-6">
 		    	<!-- filters -->
-		    	filters
+		    	<h4>filters</h4>		    		
+
+	    		<div class="panel panel-default" ng-repeat="filter in filters">
+					<div class="panel-heading">
+						<h3 class="panel-title">{{filter.name}}</h3>
+					</div>
+					<div class="panel-body">
+						{{filter.value}}
+					</div>
+				</div>
+
+
 		    </div>	    	
     	</div>
     	<div class="row">
 		    <div class="col-xs-12">
+		    	<h4>CSS3 filter</h4>
 		    	<!-- css out -->
-		    	css out
+		    	<code>
+		    		{{css()}}
+		    	</code>
 		    </div>    		
     	</div>
     </div>
