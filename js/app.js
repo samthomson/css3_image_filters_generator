@@ -50,7 +50,7 @@ function FilterCtrl($scope) {
     // return formatted css for putting into a css file
     var s_css_formatted = '.css3_image_filter{';
     
-    s_css_formatted += css();
+    s_css_formatted += $scope.css();
     
     return s_css_formatted + '}';
   };
