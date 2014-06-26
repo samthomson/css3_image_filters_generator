@@ -1,3 +1,6 @@
+
+var app = angular.module('app', ['vr.directives.slider']);
+
 function FilterCtrl($scope) {
   /*
   blur
