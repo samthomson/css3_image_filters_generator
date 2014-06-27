@@ -24,7 +24,8 @@
     	<div class="row">
 		    <div class="col-xs-12 col-sm-6 col-md-4" id="image_view">
 		    	<!-- image -->
-		    	<img src="http://farm4.staticflickr.com/3915/14503838952_748f7f441d_c.jpg" style="{{css()}}" />
+		    	<input type="text" class="form-control" ng-model="image_url"/>
+		    	<img src="{{image_url}}" style="{{css()}}" />
 		    </div>  
 		    <div class="col-xs-12 col-sm-6 col-md-8">
 		    	<!-- filters -->

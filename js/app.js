@@ -14,7 +14,8 @@ function FilterCtrl($scope) {
   opacity
   sepla
   */
-  $scope.name = "sam";
+  $scope.image_url = "http://farm4.staticflickr.com/3915/14503838952_748f7f441d_c.jpg";
+
   $scope.filter_prefix = "-webkit-filter:";
   $scope.filters = [
     {
