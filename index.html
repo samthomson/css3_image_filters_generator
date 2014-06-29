@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
-  	<div class="container" ng-controller="FilterCtrl">
+  	<div ng-controller="FilterCtrl">
 	    <h2>CSS3 Image Filters(s) Generator</h2>
 	    <div class="alert alert-info">
 	    	<p>Use sliders on the right, to style the image, css rules are generated below. For use in <em>modern</em> browsers.</p>
@@ -32,18 +32,20 @@
 		    	<h4>filters</h4>	
 		    	<div class="row">	    		
 
-		    		<div class="panel panel-default col-xs-6" ng-repeat="filter in filters">
-						<div class="panel-heading">
-							<span class="filter_title panel-title">{{filter.name}}</span><!--<input type="text" class="form-control" ng-model="filter.value"/>-->
-						</div>
-						<div class="panel-body">
-							<slider
-							    ng-model="filter.value"
-							    floor="0"
-							    ceiling="100"
-							    step="1">
-							</slider>
-							{{filter.value}}
+		    		<div class="col-xs-6" ng-repeat="filter in filters">
+		    			<div class="panel panel-default">
+							<div class="panel-heading">
+								<span class="filter_title panel-title">{{filter.name}}</span>
+							</div>
+							<div class="panel-body">
+								<slider
+								    ng-model="filter.value"
+								    floor="0"
+								    ceiling="100"
+								    step="1">
+								</slider>
+								{{filter.value}}
+							</div>
 						</div>
 					</div>
 				</div>
