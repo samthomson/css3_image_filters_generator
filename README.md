@@ -1,6 +1,8 @@
 css3_image_filters_generator
 ============================
 
+Use it here: http://imagefilters.projects.samthomson.net
+
 Single page angular app to generate CSS3 image filters CSS rules for a picture based on styling in GUI.
 
 
